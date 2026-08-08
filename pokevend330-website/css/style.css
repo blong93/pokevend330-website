@@ -21,3 +21,56 @@ linear-gradient(180deg,#06101c,#03070c)}
 .story-grid{display:grid;grid-template-columns:1.35fr .85fr;gap:30px;align-items:start;padding:35px 0}.story-grid p{color:#c1ccd8}.story-card ul{padding-left:20px}.story-card li{margin:10px 0;color:#c1ccd8}
 .contact-page-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding:35px 0}.contact-card{display:flex;flex-direction:column}.contact-card .button{margin-top:auto}
 .support-tips{text-align:center;margin-bottom:50px}
+
+
+/* Stage 5 homepage launch-ready additions */
+.why-buy{padding-top:18px;padding-bottom:8px}
+.why-buy-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.glass-card{position:relative;min-height:220px;padding:26px;border:1px solid rgba(40,125,220,.42);border-radius:16px;background:linear-gradient(145deg,rgba(13,28,49,.78),rgba(5,11,19,.68));backdrop-filter:blur(12px);box-shadow:inset 0 1px rgba(255,255,255,.03);transition:.25s ease;overflow:hidden}
+.glass-card:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 10% 0%,rgba(0,123,255,.12),transparent 42%);pointer-events:none}
+.glass-card:hover{transform:translateY(-6px);border-color:#197be1;box-shadow:0 20px 40px rgba(0,0,0,.28),0 0 26px rgba(0,120,255,.08)}
+.glass-card h3{font:800 1.03rem Montserrat,sans-serif;text-transform:uppercase;margin:14px 0 9px}
+.glass-card p{color:var(--muted);margin:0}
+.gold-icon{font-size:2rem;color:var(--gold)}
+
+.new-releases{padding:18px 0 35px}
+.release-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.release-card{position:relative;border:1px solid var(--line);border-radius:16px;padding:16px;background:linear-gradient(160deg,#09172a,#050a12);overflow:hidden;transition:.25s ease}
+.release-card:hover{transform:translateY(-5px);border-color:#1d73cf}
+.release-art{height:220px;border-radius:11px;display:grid;place-items:center;font:900 3rem Montserrat,sans-serif;letter-spacing:-.05em;box-shadow:inset 0 0 50px rgba(0,0,0,.38);margin-bottom:18px}
+.pitch-black{background:radial-gradient(circle at 35% 30%,#49536c,#090b10 55%,#000)}
+.perfect-order{background:radial-gradient(circle at 35% 30%,#e2b93f,#34130e 52%,#080504)}
+.ascended-heroes{background:radial-gradient(circle at 35% 30%,#4bb3ff,#093460 55%,#06101c)}
+.prismatic{background:conic-gradient(from 180deg,#0b557c,#7038a6,#c08f43,#1776b5,#0b557c)}
+.release-badge{display:inline-block;margin-bottom:12px;padding:6px 9px;border-radius:999px;font:800 .68rem Montserrat,sans-serif;text-transform:uppercase;letter-spacing:.05em}
+.release-badge.available{background:#0d5f35;color:#bfffd5}.release-badge.new{background:#0d4f9f;color:#cbe4ff}.release-badge.popular{background:#8e6300;color:#fff0b1}.release-badge.limited{background:#6d224d;color:#ffd8ee}
+.release-card h3{font:800 1.05rem Montserrat,sans-serif;text-transform:uppercase;margin:.35rem 0}
+.release-card p{color:var(--muted);font-size:.9rem}
+.section-cta-row{text-align:center;margin-top:22px}
+
+.trusted{padding:10px 0 36px}
+.trusted-card{display:grid;grid-template-columns:1.15fr .85fr;gap:35px;border:1px solid var(--line);border-radius:18px;padding:34px;background:linear-gradient(120deg,#061523,#08101b)}
+.trusted-card h2{font:800 clamp(1.8rem,3vw,2.7rem) Montserrat,sans-serif;margin:.25rem 0 12px}
+.trusted-card p{color:#bec9d6}
+.trusted-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;align-content:center}
+.trusted-list span{padding:12px 14px;border:1px solid #164779;border-radius:9px;background:rgba(7,22,38,.7);font-weight:700}
+
+.enhanced-footer{grid-template-columns:1.6fr 1fr 1fr 1.2fr 1fr}
+
+/* Stage 5 product page */
+.category-showcase{display:flex;flex-direction:column;gap:22px;padding:30px 0}
+.category-row{display:grid;grid-template-columns:1.4fr .6fr;gap:28px;align-items:center;border:1px solid var(--line);border-radius:18px;background:linear-gradient(150deg,#081626,#050a11);padding:28px;overflow:hidden}
+.category-row.reverse{grid-template-columns:.6fr 1.4fr}
+.category-row.reverse .category-copy{order:2}.category-row.reverse .category-visual{order:1}
+.category-copy h2{font:800 clamp(1.7rem,3vw,2.6rem) Montserrat,sans-serif;margin:.45rem 0}
+.category-copy h4{font:700 .8rem Montserrat,sans-serif;text-transform:uppercase;letter-spacing:.08em;color:#e6eef8;margin:18px 0 4px}
+.category-copy p{color:#bec9d5}
+.category-copy small{display:block;margin-top:18px;color:#75869a}
+.category-pill{display:inline-block;color:var(--gold);font:800 .72rem Montserrat,sans-serif;text-transform:uppercase;letter-spacing:.08em}
+.category-visual{min-height:280px;border-radius:14px;display:grid;place-items:center;font:900 clamp(2.8rem,6vw,5rem) Montserrat,sans-serif;color:#fff;box-shadow:inset 0 0 80px rgba(0,0,0,.35)}
+.pokemon-visual{background:radial-gradient(circle at 50% 35%,#177ac8,#082e56 48%,#06101a)}
+.magic-visual{background:radial-gradient(circle at 50% 35%,#a84a25,#3b1710 48%,#090504)}
+.onepiece-visual{background:radial-gradient(circle at 50% 35%,#3267a8,#0d294e 48%,#05090f)}
+.lorcana-visual{background:radial-gradient(circle at 50% 35%,#7351a6,#241637 48%,#07050c)}
+.yugioh-visual{background:radial-gradient(circle at 50% 35%,#a52937,#3a1018 48%,#090407)}
+.sports-visual{background:radial-gradient(circle at 50% 35%,#cc4b20,#402015 48%,#090605)}

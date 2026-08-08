@@ -7,3 +7,17 @@
   .product-page-grid,.contact-page-grid,.mini-feature-grid{grid-template-columns:1fr}
   .subpage-hero{min-height:280px;padding-top:55px}
 }
+
+@media (max-width:980px){
+  .why-buy-grid,.release-grid{grid-template-columns:1fr 1fr}
+  .trusted-card{grid-template-columns:1fr}
+  .enhanced-footer{grid-template-columns:1fr 1fr 1fr}
+  .category-row,.category-row.reverse{grid-template-columns:1fr}
+  .category-row.reverse .category-copy,.category-row.reverse .category-visual{order:initial}
+}
+@media (max-width:620px){
+  .why-buy-grid,.release-grid,.trusted-list{grid-template-columns:1fr}
+  .enhanced-footer{grid-template-columns:1fr}
+  .release-art{height:180px}
+  .category-visual{min-height:200px}
+}

@@ -1,33 +1,38 @@
-# PokeVend 330 Website — Stage 4
+# PokeVend 330 Website — Stage 5
 
-Stage 4 turns the site into a real multi-page website.
+This release focuses on:
 
-## Pages
-- `/` — customer homepage
-- `/products/` — product categories
-- `/locations/` — machine locations / launch status
-- `/about/` — PokeVend 330 story
-- `/faq/` — customer FAQ
-- `/contact/` — customer support and contact
-- `/partners/` — business-owner placement page
-- `404.html` — custom not-found page
+## Milestone 1 — Launch-ready homepage
+- New Why Buy From PokeVend 330? section
+- New New Releases section
+- Honest Launching Across Akron / Trusted By section
+- Expanded footer
+- Existing hero, brands, how-it-works, machine features, and FAQ retained
+
+## Milestone 2 — Better Products page
+Dedicated category sections for:
+- Pokémon
+- Magic: The Gathering
+- One Piece
+- Disney Lorcana
+- Yu-Gi-Oh!
+- Sports Cards
+
+Each category includes:
+- description
+- newest releases / product direction
+- typical stock
+- available-at-select-locations messaging
 
 ## Install
-Copy all files into the root of your local `pokevend330-website` repository and replace existing files when prompted.
+Unzip this package into the root of your local `pokevend330-website` repository and replace existing files.
 
 Then:
 
 ```powershell
 git add .
-git commit -m "Add customer pages and complete Stage 4"
+git commit -m "Launch-ready homepage and upgraded products page"
 git push origin main
 ```
 
-GitHub Pages should redeploy automatically.
-
-## Recommended next stage
-1. Connect `pokevend330.com` to GitHub Pages.
-2. Configure `info@pokevend330.com` forwarding.
-3. Replace placeholder product treatments with licensed/owned product photos you have permission to use.
-4. Add the first real machine location.
-5. Add a real email signup provider only when you want to collect a mailing list.
+GitHub Pages will redeploy automatically.
