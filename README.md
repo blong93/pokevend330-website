@@ -39,3 +39,9 @@ GitHub Pages will redeploy automatically.
 
 
 Release images added to homepage. Chaos Rising is included in images/releases/ for later use.
+
+## Classic homepage restoration
+The homepage has been returned to the earlier customer-first composition:
+Hero → Featured Brands → How It Works → Machine Features → FAQ → Footer.
+
+The upgraded Products page and other Stage 5 pages remain intact.
