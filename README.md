@@ -72,3 +72,15 @@ No live inventory claims are made; product availability remains location-depende
 - Insurance FAQ removed
 - Partner CTA text/button formatted for single-line desktop presentation
 - Homepage machine presentation scaled to show the full machine and its trading-card inventory more clearly
+
+
+## Stage 8 — New Master Revision List
+- Replaced the rough Ohio silhouette with a more accurate county-based Ohio map.
+- Summit County / Akron is highlighted and labeled on the service-area map.
+- Service-area copy now keeps “Akron, OH” and “Locally owned & operated” on separate lines.
+- Homepage Email PokeVend 330 CTA now shows info@pokevend330.com beneath the title and emails that address.
+- Added verified, product-specific current-card-price links to every product currently displayed on the Products page.
+- Pokémon price links use exact PokémonWizard set pages.
+- Magic, One Piece, Lorcana, and Yu-Gi-Oh! use exact TCGplayer price guides.
+- Topps sports products use verified PriceCharting / SportsCardsPro flagship-set price guides.
+- All external price links open in a new browser tab with safe rel attributes.

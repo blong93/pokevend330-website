@@ -63,3 +63,10 @@
   .enhanced-footer{grid-template-columns:1fr}
   .product-strip-images a img{height:125px}
 }
+
+@media(max-width:620px){
+  .service-area-mini img{width:120px;height:136px}
+  .service-area-local{white-space:normal}
+  .email-pokevend-cta{min-width:0;width:100%}
+  .email-cta-title,.email-cta-address{white-space:nowrap}
+}

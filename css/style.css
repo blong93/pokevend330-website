@@ -265,3 +265,90 @@ a.button:focus-visible,.main-nav a:focus-visible,.text-link:focus-visible{
 
 /* Service-area footer support in expanded footer layouts */
 .enhanced-footer{grid-template-columns:1.45fr .9fr .9fr 1.05fr 1.1fr 1fr}
+
+
+/* =========================================================
+   STAGE 8 — NEW MASTER REVISION LIST
+   ========================================================= */
+
+/* Improved service-area treatment with accurate Ohio map */
+.service-area-footer{min-width:185px}
+.service-area-mini{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:8px;
+}
+.service-area-mini img{
+  width:138px;
+  height:156px;
+  object-fit:contain;
+  display:block;
+  filter:drop-shadow(0 10px 18px rgba(0,0,0,.35));
+}
+.service-area-copy{display:block;line-height:1.25}
+.service-area-city{
+  color:#fff;
+  font-size:.95rem;
+  font-weight:800;
+  white-space:nowrap;
+}
+.service-area-local{
+  display:block;
+  color:#8fa2b8;
+  font-size:.72rem;
+  margin-top:4px;
+  white-space:nowrap;
+}
+
+/* Homepage email CTA — title and address inside the same button */
+.email-pokevend-cta{
+  min-width:330px;
+  flex-direction:column;
+  gap:3px;
+  line-height:1.12;
+}
+.email-cta-title{
+  display:block;
+  white-space:nowrap;
+  font-size:.94rem;
+}
+.email-cta-address{
+  display:block;
+  white-space:nowrap;
+  font-family:Inter,Arial,sans-serif;
+  font-size:.78rem;
+  font-weight:600;
+  text-transform:none;
+  letter-spacing:0;
+  opacity:.88;
+}
+
+/* Subtle verified current-price links on product cards */
+.price-lookup-link{
+  display:block;
+  margin-top:10px;
+  padding-top:10px;
+  border-top:1px solid rgba(66,151,235,.16);
+  color:#83bdff;
+  font-size:.78rem;
+  font-weight:650;
+  line-height:1.35;
+  transition:color .18s ease, transform .18s ease;
+}
+.price-lookup-link:hover{
+  color:#f6c22f;
+  transform:translateX(2px);
+}
+.price-lookup-link:focus-visible{
+  outline:2px solid rgba(246,194,47,.85);
+  outline-offset:3px;
+  border-radius:3px;
+}
+.third-party-pricing-note{
+  max-width:720px;
+  margin:18px auto 0;
+  color:#718195;
+  font-size:.7rem;
+  line-height:1.5;
+}
