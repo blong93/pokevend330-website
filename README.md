@@ -84,3 +84,15 @@ No live inventory claims are made; product availability remains location-depende
 - Magic, One Piece, Lorcana, and Yu-Gi-Oh! use exact TCGplayer price guides.
 - Topps sports products use verified PriceCharting / SportsCardsPro flagship-set price guides.
 - All external price links open in a new browser tab with safe rel attributes.
+
+
+## Stage 9 — Master Revision
+- Product pricing link labels now read “View [Set Name] Cards & Prices” while preserving the verified destinations and new-tab behavior.
+- Locations page crossroads graphic replaced with the Ohio county map highlighting Akron.
+- Homepage benefit symbols replaced with clean white line icons.
+- Homepage How It Works section redesigned into a tighter horizontal visual strip with new icons and revised copy.
+- Always Stocked card redesigned and now features Ascended Heroes + Prismatic Evolutions.
+- Built for Collectors card redesigned with a coordinated collector-card graphic.
+- All visible business phone-number occurrences now read “Call/Text (330) 552-8172”.
+- Products-page hero heading changed to “Featured Card Packs”.
+- About Us hero heading changed to “The Fastest Way to Your Next Pack”.
