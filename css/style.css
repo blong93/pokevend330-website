@@ -158,3 +158,110 @@ linear-gradient(180deg,#06101c,#03070c)}
 .button{position:relative;overflow:hidden}
 .button:after{content:"";position:absolute;top:-30%;left:-120%;width:60%;height:160%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.18),transparent);transform:skewX(-20deg);transition:left .55s ease}
 .button:hover:after{left:150%}
+
+
+/* =========================================================
+   STAGE 7 MASTER REVISION PASS
+   ========================================================= */
+
+/* Global service area map treatment */
+.service-area-footer{min-width:180px}
+.service-area-mini{display:flex;align-items:center;gap:10px}
+.service-area-mini img{width:82px;height:72px;object-fit:contain;flex:0 0 auto}
+.service-area-mini strong{display:block;color:#fff;font-size:.92rem}
+.service-area-mini span{display:block;color:#7e8fa3;font-size:.68rem;margin-top:3px}
+
+/* Center issue-report pills */
+.support-tips .tag-row{justify-content:center;align-items:center}
+
+/* Homepage hero: full machine, clear product rows, no collision */
+.hero-showcase{overflow:visible}
+.machine-wrap{
+  width:min(430px,68%);
+  right:2.5%;
+  bottom:4px;
+  z-index:2;
+}
+.machine-wrap img{
+  width:100%;
+  max-height:610px;
+  object-fit:contain;
+  object-position:center bottom;
+}
+.product-strip{
+  left:-25%;
+  right:6%;
+  top:28px;
+  gap:18px;
+  z-index:4;
+  pointer-events:auto;
+}
+.product-strip-images a{
+  min-height:150px;
+  max-height:165px;
+  padding:0 3px;
+}
+.product-strip-images a img{
+  height:158px;
+  max-width:112px;
+  object-fit:contain;
+}
+
+/* Partner hero: remove pasted-on-box feel and show entire machine */
+.partner-hero{
+  grid-template-columns:minmax(0,1.6fr) minmax(330px,.65fr);
+  overflow:hidden;
+}
+.partner-machine{
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:560px;
+}
+.partner-machine:before{
+  content:"";
+  position:absolute;
+  width:78%;
+  height:72%;
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(0,123,255,.28),rgba(0,123,255,.06) 48%,transparent 72%);
+  filter:blur(8px);
+}
+.partner-machine img{
+  position:relative;
+  z-index:1;
+  width:auto;
+  max-width:390px;
+  max-height:570px;
+  object-fit:contain;
+  margin:auto;
+  filter:drop-shadow(0 28px 38px rgba(0,0,0,.65));
+}
+
+/* Partner location list can accommodate 10 items cleanly */
+.location-types{grid-template-columns:repeat(5,1fr)}
+
+/* Partner bottom CTA desktop line treatment */
+.partner-contact-section{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  align-items:center;
+  gap:34px;
+}
+.partner-contact-copy p{max-width:none}
+.partner-email-button{white-space:nowrap;min-width:330px}
+
+/* Make clickable controls visually and functionally consistent */
+a.button{cursor:pointer}
+a.button:focus-visible,.main-nav a:focus-visible,.text-link:focus-visible{
+  outline:3px solid rgba(246,194,47,.75);
+  outline-offset:3px;
+}
+
+/* Better product-source cropping display */
+.shop-art{padding:8px}
+.shop-art img{max-width:100%;max-height:100%;object-fit:contain}
+
+/* Service-area footer support in expanded footer layouts */
+.enhanced-footer{grid-template-columns:1.45fr .9fr .9fr 1.05fr 1.1fr 1fr}

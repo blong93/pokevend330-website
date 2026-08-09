@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 240" role="img" aria-labelledby="title desc">
+<title id="title">Ohio service area map</title>
+<desc id="desc">Stylized map of Ohio with Akron highlighted.</desc>
+<defs>
+  <linearGradient id="ohBlue" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#0b4fbd"/><stop offset="1" stop-color="#0878ff"/>
+  </linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<path d="M48 25 L194 19 L224 46 L220 77 L239 111 L229 147 L207 180 L178 202 L143 211 L112 199 L84 202 L60 177 L43 148 L39 116 L27 87 L42 61 Z"
+      fill="url(#ohBlue)" stroke="#42a0ff" stroke-width="4" stroke-linejoin="round"/>
+<circle cx="176" cy="73" r="9" fill="#f6c22f" filter="url(#glow)"/>
+<circle cx="176" cy="73" r="19" fill="none" stroke="#f6c22f" stroke-width="3" opacity=".55"/>
+<text x="190" y="79" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Akron</text>
+</svg>

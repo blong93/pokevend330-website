@@ -55,3 +55,20 @@ The upgraded Products page and other Stage 5 pages remain intact.
 - Existing customer-first homepage composition retained
 
 No live inventory claims are made; product availability remains location-dependent.
+
+
+## Stage 7 — Master Revision List Applied
+- Global support phone updated to (330) 552-8172
+- Global support email updated to support@pokevend330.com
+- Partnership CTAs now open a pre-addressed email to partner@pokevend330.com
+- All button-style links audited to ensure they have actions
+- Uploaded product/logo assets cropped to remove obvious excess white/transparent padding
+- Cropped source masters saved under `images/library/` for future use
+- Ohio service-area visual with Akron highlighted added wherever Service Area is displayed
+- Contact-page vending-issue pills centered
+- Partner hero machine image cleaned, resized, and blended into the hero
+- Partner location priorities updated; Gas Stations and Convenience Stores added; Bowling Alleys moved to the end
+- Partner machine-size FAQ updated for wall-mounted and free-standing options
+- Insurance FAQ removed
+- Partner CTA text/button formatted for single-line desktop presentation
+- Homepage machine presentation scaled to show the full machine and its trading-card inventory more clearly
