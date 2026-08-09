@@ -45,3 +45,13 @@ The homepage has been returned to the earlier customer-first composition:
 Hero → Featured Brands → How It Works → Machine Features → FAQ → Footer.
 
 The upgraded Products page and other Stage 5 pages remain intact.
+
+## Stage 6 — Real product asset integration
+- Real uploaded booster-pack photography added to the homepage hero strip
+- Real brand logos added to the featured-brand strip
+- Products page rebuilt as a visual storefront
+- Akron skyline photo integrated into homepage and Locations page
+- Subtle hover, floating, glow, and button motion added
+- Existing customer-first homepage composition retained
+
+No live inventory claims are made; product availability remains location-dependent.

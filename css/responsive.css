@@ -21,3 +21,15 @@
   .release-art{height:180px}
   .category-visual{min-height:200px}
 }
+
+@media(max-width:980px){
+  .shop-grid,.compact-grid{grid-template-columns:repeat(2,1fr)}
+  .storefront-heading{align-items:flex-start}
+}
+@media(max-width:620px){
+  .brand-logo-list{grid-template-columns:repeat(2,1fr)}
+  .shop-grid,.compact-grid{grid-template-columns:1fr}
+  .shop-art{height:360px}
+  .storefront-heading{flex-direction:column;gap:10px}
+  .local-photo-copy{width:82%}
+}

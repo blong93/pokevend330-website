@@ -110,3 +110,51 @@ linear-gradient(180deg,#06101c,#03070c)}
 .product-strip-images .hero-pack-placeholder.sports{
   background:linear-gradient(160deg,#4d1717,#07101d 55%,#08142a);
 }
+
+/* Stage 6 asset-driven polish */
+.product-strip-images a{
+  min-height:175px;
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+  transition:transform .28s ease, filter .28s ease;
+}
+.product-strip-images a:hover{transform:translateY(-8px) scale(1.035);filter:brightness(1.08)}
+.product-strip-images a img{
+  width:100%;
+  height:175px;
+  object-fit:contain;
+  filter:drop-shadow(0 12px 18px rgba(0,0,0,.68));
+}
+.brand-logo-list{align-items:center}
+.brand-logo-list a{height:78px;display:flex;align-items:center;justify-content:center;padding:10px 14px;transition:.25s ease}
+.brand-logo-list img{max-height:58px;max-width:150px;width:auto;object-fit:contain;filter:drop-shadow(0 6px 10px rgba(0,0,0,.55));transition:.25s ease}
+.brand-logo-list a:hover img{transform:scale(1.07);filter:drop-shadow(0 0 15px rgba(0,128,255,.38))}
+.local-photo-card{padding:0!important;min-height:220px}
+.local-photo{position:absolute;inset:0}
+.local-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(3,9,16,.97) 0%,rgba(3,9,16,.78) 48%,rgba(3,9,16,.18) 100%)}
+.local-photo img{width:100%;height:100%;object-fit:cover}
+.local-photo-copy{position:relative;z-index:2;width:62%;padding:25px}
+.storefront-section{padding:30px 0;border-bottom:1px solid rgba(19,58,105,.55)}
+.storefront-heading{display:flex;align-items:center;gap:24px;margin-bottom:24px}
+.storefront-heading img{width:auto;max-width:220px;max-height:82px;object-fit:contain}
+.storefront-heading h2{font:800 clamp(2rem,4vw,3.3rem) Montserrat,sans-serif;margin:.15rem 0}
+.storefront-heading p{color:var(--muted)}
+.shop-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.compact-grid{grid-template-columns:repeat(4,minmax(220px,1fr))}
+.shop-card{border:1px solid var(--line);border-radius:15px;padding:14px;background:linear-gradient(160deg,#091729,#050b13);transition:.25s ease}
+.shop-card:hover{transform:translateY(-6px);border-color:#197be1;box-shadow:0 18px 36px rgba(0,0,0,.35)}
+.shop-art{height:300px;border-radius:10px;background:radial-gradient(circle at 50% 30%,#11263e,#03070b 70%);display:flex;align-items:center;justify-content:center;padding:10px;overflow:hidden}
+.shop-art img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 14px 20px rgba(0,0,0,.55))}
+.shop-card h3{font:800 1rem Montserrat,sans-serif;text-transform:uppercase;margin:14px 0 4px}
+.shop-card p{color:var(--muted);font-size:.88rem;margin:0 0 12px}
+.availability{font-size:.72rem;color:#7fb9f4;text-transform:uppercase;font-weight:700}
+.akron-hero{position:relative;overflow:hidden;background:#05070b}
+.akron-hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.48}
+.akron-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(3,8,14,.96),rgba(3,8,14,.62),rgba(3,8,14,.82))}
+.akron-hero .subpage-copy{position:relative;z-index:2}
+@keyframes gentleFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+.machine-wrap{animation:gentleFloat 5.5s ease-in-out infinite}
+.button{position:relative;overflow:hidden}
+.button:after{content:"";position:absolute;top:-30%;left:-120%;width:60%;height:160%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.18),transparent);transform:skewX(-20deg);transition:left .55s ease}
+.button:hover:after{left:150%}
