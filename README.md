@@ -36,3 +36,6 @@ git push origin main
 ```
 
 GitHub Pages will redeploy automatically.
+
+
+Release images added to homepage. Chaos Rising is included in images/releases/ for later use.
