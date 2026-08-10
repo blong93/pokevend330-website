@@ -96,3 +96,11 @@ No live inventory claims are made; product availability remains location-depende
 - All visible business phone-number occurrences now read “Call/Text (330) 552-8172”.
 - Products-page hero heading changed to “Featured Card Packs”.
 - About Us hero heading changed to “The Fastest Way to Your Next Pack”.
+
+
+## Stage 10 notes
+
+- Homepage center card artwork is a standalone replaceable file: `images/hero/hero-cards.png`.
+- To swap the hero cards later, replace that file with a PNG using the same filename (a transparent PNG with a roughly 3:2 landscape canvas works best). No HTML/CSS edit is required.
+- Homepage machine artwork is `images/hero/hero-machine.png`.
+- Products page contains 48 featured packs and price-guide links. Pokémon product price links prioritize PokémonWizard.

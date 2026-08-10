@@ -1,0 +1,27 @@
+{
+  "product_cards": 48,
+  "price_links": 48,
+  "categories": {
+    "pokemon": 26,
+    "magic": 5,
+    "lorcana": 4,
+    "one-piece": 4,
+    "yugioh": 4,
+    "sports": 5
+  },
+  "pokemonwizard_links": 26,
+  "heading": "Featured Packs",
+  "featured_card_packs_occurrences": 0,
+  "unique_product_names": 48,
+  "duplicate_names": [],
+  "unique_product_image_srcs": 48,
+  "missing_product_images": [],
+  "empty_hrefs": [],
+  "missing_local_assets": [],
+  "hero_columns": 3,
+  "hero_card_asset": "images/hero/hero-cards.png",
+  "hero_machine_asset": "images/hero/hero-machine.png",
+  "loose_product_strip": 0,
+  "hero_benefit_count": 4,
+  "bad_phone_format": []
+}
