@@ -1,4 +1,4 @@
-# PokeVend 330 Website — Stage 5
+# PokeVend 330 Website — Stage 11
 
 This release focuses on:
 
@@ -104,3 +104,13 @@ No live inventory claims are made; product availability remains location-depende
 - To swap the hero cards later, replace that file with a PNG using the same filename (a transparent PNG with a roughly 3:2 landscape canvas works best). No HTML/CSS edit is required.
 - Homepage machine artwork is `images/hero/hero-machine.png`.
 - Products page contains 48 featured packs and price-guide links. Pokémon product price links prioritize PokémonWizard.
+
+
+## Stage 11 notes
+
+- Products page now displays 32 featured packs.
+- Temporarily hidden product cards: Astral Radiance, Battle Styles, Chilling Reign, Darkness Ablaze, Lost Origin, Obsidian Flames, Paldea Evolved, Paradox Rift, Scarlet & Violet, Stellar Crown, Sword & Shield, Temporal Forces, Vivid Voltage, White Flare, Magic: The Lord of the Rings — Tales of Middle-earth, and Topps 2024 Series 1.
+- Hidden product image assets remain in the site folders for quick restoration later.
+- Contact page phone card now displays only `(330) 552-8172`.
+- Contact page phone button now reads `Call/Text Now`.
+- The underlying phone link remains `tel:+13305528172`.
