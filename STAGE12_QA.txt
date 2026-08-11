@@ -1,0 +1,15 @@
+PokeVend 330 — Stage 12 QA
+
+PASS: Partners page references ../images/hero/hero-cards.png
+PASS: Partners page references ../images/hero/hero-machine.png
+PASS: Partners page no longer references ../images/machine-clean.png
+PASS: Homepage continues to reference images/hero/hero-cards.png
+PASS: Homepage continues to reference images/hero/hero-machine.png
+PASS: Responsive Partners hero CSS added for desktop, tablet and mobile
+PASS: 32 product price-guide links remain on Products page
+PASS: No missing local HTML/CSS/image/script references detected
+PASS: CNAME contains pokevend330.com
+PASS: .nojekyll included
+
+Deployment note:
+Unzip directly into the repository root. Do not place the website inside an extra nested folder.

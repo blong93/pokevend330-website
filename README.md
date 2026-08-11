@@ -1,4 +1,4 @@
-# PokeVend 330 Website — Stage 11
+# PokeVend 330 Website — Stage 12
 
 This release focuses on:
 
@@ -114,3 +114,15 @@ No live inventory claims are made; product availability remains location-depende
 - Contact page phone card now displays only `(330) 552-8172`.
 - Contact page phone button now reads `Call/Text Now`.
 - The underlying phone link remains `tel:+13305528172`.
+
+
+## Stage 12 notes
+
+- Partners-page hero now uses the same shared hero assets as the homepage:
+  - `images/hero/hero-cards.png`
+  - `images/hero/hero-machine.png`
+- The old Partners-page `images/machine-clean.png` hero reference has been removed.
+- Partners-page hero is now a responsive three-part composition: partner copy/CTA, shared 3-card artwork, shared machine artwork.
+- Desktop, tablet, and mobile layouts are included.
+- Replacing either shared hero file updates both the homepage and Partners page automatically.
+- `CNAME` (`pokevend330.com`) and `.nojekyll` are included so a clean GitHub Pages deployment does not remove the custom-domain configuration again.

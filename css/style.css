@@ -548,3 +548,72 @@ a.button:focus-visible,.main-nav a:focus-visible,.text-link:focus-visible{
 .shop-card .price-lookup-link{margin-top:auto;padding-top:15px}
 .storefront-heading{margin-bottom:22px}
 .storefront-heading>div>p:last-child{max-width:680px;color:var(--muted)}
+
+
+/* Stage 12: Partners hero uses the same swappable hero assets as the homepage. */
+.partner-hero.partner-hero-v12{
+  position:relative;
+  display:grid;
+  grid-template-columns:minmax(430px,1.18fr) minmax(300px,.9fr) minmax(285px,.7fr);
+  gap:clamp(12px,1.6vw,30px);
+  width:min(1650px,96vw);
+  min-height:680px;
+  margin:0 auto;
+  padding:48px 1vw 34px;
+  align-items:center;
+  overflow:hidden;
+}
+.partner-hero-v12 .partner-copy{max-width:690px;position:relative;z-index:4}
+.partner-hero-v12 .partner-copy>p:not(.eyebrow){max-width:660px}
+.partner-card-stage,.partner-machine-v12{
+  position:relative;
+  display:grid;
+  place-items:center;
+  min-width:0;
+  isolation:isolate;
+}
+.partner-card-stage{align-self:center;min-height:430px}
+.partner-card-art{
+  position:relative;
+  z-index:2;
+  display:block;
+  width:min(100%,610px);
+  height:auto;
+  object-fit:contain;
+  filter:drop-shadow(0 28px 44px rgba(0,0,0,.62));
+}
+.partner-machine.partner-machine-v12{
+  min-height:620px;
+  align-self:end;
+}
+.partner-machine-v12:before{display:none}
+.partner-machine-v12 .partner-machine-art{
+  position:relative;
+  z-index:2;
+  display:block;
+  width:auto;
+  max-width:100%;
+  max-height:625px;
+  object-fit:contain;
+  margin:auto;
+  filter:drop-shadow(0 34px 48px rgba(0,0,0,.76));
+}
+.partner-stage-glow{
+  position:absolute;
+  z-index:1;
+  pointer-events:none;
+  border-radius:50%;
+  filter:blur(52px);
+}
+.partner-card-glow{
+  width:94%;
+  height:58%;
+  background:rgba(0,116,255,.28);
+  box-shadow:0 0 115px rgba(0,116,255,.33);
+}
+.partner-machine-glow{
+  width:78%;
+  height:72%;
+  background:rgba(0,105,255,.20);
+  box-shadow:0 0 115px rgba(0,113,255,.28);
+}
