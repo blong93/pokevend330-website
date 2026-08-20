@@ -550,70 +550,89 @@ a.button:focus-visible,.main-nav a:focus-visible,.text-link:focus-visible{
 .storefront-heading>div>p:last-child{max-width:680px;color:var(--muted)}
 
 
-/* Stage 12: Partners hero uses the same swappable hero assets as the homepage. */
-.partner-hero.partner-hero-v12{
-  position:relative;
-  display:grid;
-  grid-template-columns:minmax(430px,1.18fr) minmax(300px,.9fr) minmax(285px,.7fr);
-  gap:clamp(12px,1.6vw,30px);
-  width:min(1650px,96vw);
-  min-height:680px;
-  margin:0 auto;
-  padding:48px 1vw 34px;
-  align-items:center;
-  overflow:hidden;
-}
-.partner-hero-v12 .partner-copy{max-width:690px;position:relative;z-index:4}
-.partner-hero-v12 .partner-copy>p:not(.eyebrow){max-width:660px}
-.partner-card-stage,.partner-machine-v12{
-  position:relative;
-  display:grid;
-  place-items:center;
-  min-width:0;
-  isolation:isolate;
-}
-.partner-card-stage{align-self:center;min-height:430px}
-.partner-card-art{
-  position:relative;
-  z-index:2;
-  display:block;
-  width:min(100%,610px);
-  height:auto;
-  object-fit:contain;
-  filter:drop-shadow(0 28px 44px rgba(0,0,0,.62));
-}
-.partner-machine.partner-machine-v12{
-  min-height:620px;
-  align-self:end;
-}
-.partner-machine-v12:before{display:none}
-.partner-machine-v12 .partner-machine-art{
-  position:relative;
-  z-index:2;
-  display:block;
-  width:auto;
-  max-width:100%;
-  max-height:625px;
-  object-fit:contain;
-  margin:auto;
-  filter:drop-shadow(0 34px 48px rgba(0,0,0,.76));
-}
-.partner-stage-glow{
-  position:absolute;
-  z-index:1;
-  pointer-events:none;
-  border-radius:50%;
-  filter:blur(52px);
-}
-.partner-card-glow{
-  width:94%;
-  height:58%;
-  background:rgba(0,116,255,.28);
-  box-shadow:0 0 115px rgba(0,116,255,.33);
-}
-.partner-machine-glow{
-  width:78%;
-  height:72%;
-  background:rgba(0,105,255,.20);
-  box-shadow:0 0 115px rgba(0,113,255,.28);
-}
+/* =========================================================
+   STAGE 12 — CARD VALUE GUIDE
+   ========================================================= */
+.card-overview{padding:34px 0 12px;border-top:1px solid rgba(19,58,105,.55)}
+.card-overview-heading>p:last-child{max-width:760px;margin:8px auto 0;color:var(--muted)}
+.card-overview-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.card-overview-step{position:relative;border:1px solid var(--line);border-radius:14px;padding:24px 22px 22px;background:linear-gradient(155deg,rgba(8,24,43,.96),rgba(4,10,18,.98));min-height:255px;overflow:hidden}
+.card-overview-step:after{content:"";position:absolute;width:140px;height:140px;right:-58px;bottom:-68px;border-radius:50%;background:rgba(0,119,255,.11);filter:blur(4px)}
+.card-step-number,.guide-section-title>span{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--blue),#154eea);font:900 1rem Montserrat,sans-serif;box-shadow:0 0 24px rgba(0,119,255,.26)}
+.card-overview-step h3{margin:14px 0 8px;font:800 1.15rem Montserrat,sans-serif;text-transform:uppercase}
+.card-overview-step p{color:var(--muted);font-size:.91rem}
+.card-overview-step strong{color:#f5f9ff}
+.guide-inline-link{position:relative;z-index:2;display:inline-block;margin-top:8px;color:#83bdff;font-weight:750;font-size:.86rem}
+.guide-inline-link:hover{color:var(--gold)}
+.guide-tip{padding:10px 12px;border-left:2px solid var(--gold);background:rgba(246,194,47,.05)}
+.mini-check-list{display:grid;grid-template-columns:1fr 1fr;gap:5px 18px;margin:8px 0 0;padding-left:18px;color:#d5deea;font-size:.88rem}
+.guide-cta-panel{display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center;margin:24px 0 16px;padding:26px 28px;border:1px solid rgba(8,120,255,.55);border-radius:15px;background:radial-gradient(circle at 85% 50%,rgba(8,120,255,.15),transparent 38%),linear-gradient(135deg,#07182c,#050b13)}
+.guide-cta-panel h3{margin:.25rem 0 .4rem;font:800 1.45rem Montserrat,sans-serif}
+.guide-cta-panel p:not(.eyebrow){margin:0;color:var(--muted);max-width:760px}
+.buyback-note{padding:22px 24px;border:1px solid rgba(246,194,47,.45);border-radius:13px;background:linear-gradient(120deg,rgba(246,194,47,.07),rgba(7,18,31,.92))}
+.buyback-note h3,.buyback-note h2{margin:0 0 8px;font-family:Montserrat,sans-serif}
+.buyback-note p{margin:0;color:#cdd7e3}
+
+.guide-hero{min-height:410px;background:radial-gradient(circle at 50% 5%,rgba(0,117,255,.25),transparent 42%),linear-gradient(120deg,#03080e,#08182b 55%,#04101e)}
+.guide-hero .subpage-copy{max-width:960px}
+.guide-hero h1{font-size:clamp(2.8rem,5.7vw,5.6rem)}
+.guide-jump{display:grid;grid-template-columns:repeat(6,1fr);gap:9px;margin-top:24px;margin-bottom:34px}
+.guide-jump a{display:flex;align-items:center;justify-content:center;gap:8px;padding:12px 8px;border:1px solid var(--line);border-radius:8px;background:#07111e;font:800 .76rem Montserrat,sans-serif;text-transform:uppercase;color:#dfe9f4}
+.guide-jump a:hover{border-color:var(--blue);background:#091a2e}
+.guide-jump span{color:var(--gold)}
+.guide-section{scroll-margin-top:104px;padding:34px 0 30px;border-bottom:1px solid rgba(19,58,105,.58)}
+.guide-section-title{display:flex;align-items:center;gap:16px;margin-bottom:22px}
+.guide-section-title>span{flex:0 0 42px}
+.guide-section-title h2{margin:.05rem 0;font:800 clamp(1.8rem,3vw,2.8rem) Montserrat,sans-serif}
+.guide-section-title .eyebrow{margin:0}
+.guide-prose{max-width:920px}
+.guide-prose p,.guide-lead{color:var(--muted)}
+.guide-prose h3{margin:24px 0 6px;font:800 1.05rem Montserrat,sans-serif;text-transform:uppercase}
+.guide-lead{font-size:1.02rem;max-width:930px}
+.centered{margin-left:auto;margin-right:auto;text-align:center}
+.protection-options,.grader-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin:22px 0}
+.protection-options article,.grader-grid article,.condition-grid article,.decision-card,.selling-grid article,.guide-check-card{border:1px solid var(--line);border-radius:12px;padding:20px;background:linear-gradient(160deg,rgba(8,21,36,.94),rgba(5,11,19,.96))}
+.protection-options h3,.grader-grid h3,.condition-grid h3,.decision-card h3,.selling-grid h3,.guide-check-card h3{margin:0 0 8px;font:800 1rem Montserrat,sans-serif}
+.protection-options p,.grader-grid p,.condition-grid p,.decision-card p,.selling-grid p,.guide-check-card li{color:var(--muted);font-size:.9rem}
+.guide-warning{margin:20px 0;padding:17px 18px;border-left:3px solid var(--gold);border-radius:6px;background:rgba(246,194,47,.07);color:#dce5ee}
+.guide-two-col{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(260px,.75fr);gap:24px;align-items:start}
+.guide-check-card ul,.decision-card ul{margin:10px 0;padding-left:20px}
+.guide-check-card li,.decision-card li{margin:5px 0}
+.external-tool-row{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin:20px 0 26px}
+.external-tool{display:flex;flex-direction:column;gap:4px;padding:18px 20px;border:1px solid rgba(8,120,255,.45);border-radius:10px;background:rgba(7,22,40,.78)}
+.external-tool strong{font:800 1rem Montserrat,sans-serif}
+.external-tool span{color:#8ec6ff;font-size:.86rem}
+.external-tool:hover{border-color:var(--gold)}
+.condition-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:20px}
+.grader-grid{grid-template-columns:repeat(4,1fr)}
+.grader-grid .tag-card{border-color:rgba(8,120,255,.68);box-shadow:inset 0 0 30px rgba(8,120,255,.06)}
+.ludwig-callout{display:grid;grid-template-columns:1fr auto;align-items:center;gap:28px;margin:26px 0;padding:25px 28px;border:1px solid rgba(8,120,255,.55);border-radius:14px;background:radial-gradient(circle at 80% 50%,rgba(8,120,255,.17),transparent 35%),#06111f}
+.ludwig-callout h3{margin:.2rem 0 .4rem;font:800 1.25rem Montserrat,sans-serif}
+.ludwig-callout p:not(.eyebrow){margin:0;color:var(--muted);max-width:760px}
+.grade-economics{margin-top:28px}
+.grade-economics>h3,.selling-title{font:800 1.35rem Montserrat,sans-serif}
+.grade-four{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:15px 0}
+.grade-four span{display:flex;align-items:center;gap:9px;border:1px solid var(--line);border-radius:9px;padding:14px 12px;background:#07111e;font-weight:650;font-size:.88rem}
+.grade-four b{display:grid;place-items:center;min-width:28px;height:28px;border-radius:50%;background:var(--blue)}
+.example-math{padding:19px 22px;border-radius:10px;background:#070d14;border:1px solid rgba(255,255,255,.08);color:#cbd6e1}
+.example-math p{margin:6px 0}
+.big-question{color:var(--gold)!important;font-weight:800;font-size:1.05rem}
+.keep-sell-intro{grid-template-columns:1fr 1fr;margin-bottom:28px}
+.decision-card ul{color:var(--muted)}
+.selling-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:13px;margin-top:20px}
+.sell-card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;border-bottom:1px solid rgba(19,58,105,.6);padding-bottom:10px;margin-bottom:10px}
+.sell-card-top h3{margin:0}
+.sell-card-top span{white-space:nowrap;color:var(--gold);font:900 1rem Montserrat,sans-serif}
+.value-convenience{display:flex;flex-wrap:wrap;gap:9px 14px;align-items:center;margin-top:20px;padding:17px 20px;border:1px solid var(--line);border-radius:10px;background:#06101d;font-size:.88rem}
+.value-convenience strong{color:var(--gold);margin-right:6px}
+.value-convenience span{color:#cbd6e1}
+.process-line{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px;margin:20px 0;font:800 .92rem Montserrat,sans-serif;text-transform:uppercase}
+.process-line span{padding:10px 13px;border:1px solid var(--line);border-radius:7px;background:#07111e}
+.process-line b{color:var(--gold)}
+.buyback-note-large{margin-top:38px;margin-bottom:28px;text-align:center;padding:28px 30px}
+.buyback-note-large p{max-width:850px;margin:0 auto}
+.guide-final{text-align:center;padding:38px 0 50px}
+.final-four{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0}
+.final-four span{padding:17px 12px;border:1px solid rgba(8,120,255,.42);border-radius:9px;background:#07111e;font:800 .88rem Montserrat,sans-serif}
+.guide-final>p:not(.eyebrow):not(.guide-disclaimer){font:800 1.3rem Montserrat,sans-serif}
+.guide-disclaimer{max-width:850px;margin:26px auto 0;color:#718195;font-size:.72rem;line-height:1.55}
