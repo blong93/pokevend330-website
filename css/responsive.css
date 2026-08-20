@@ -139,7 +139,7 @@
 }
 
 
-/* Stage 12 card guide responsive */
+/* Card guide responsive */
 @media(max-width:1050px){
   .card-overview-grid{grid-template-columns:repeat(2,1fr)}
   .grader-grid{grid-template-columns:repeat(2,1fr)}
@@ -164,7 +164,7 @@
   .value-convenience{align-items:flex-start;flex-direction:column}
 }
 
-/* ===== Stage 14 card-guide responsive refinements ===== */
+/* ===== Stage 15 card-guide responsive refinements ===== */
 @media(max-width:1050px){
   .value-convenience-grid span{font-size:.80rem;padding:13px 12px;gap:7px}
   .value-convenience-grid b{font-size:.76rem}
@@ -180,4 +180,18 @@
   .value-convenience-grid span{font-size:clamp(.68rem,3.2vw,.82rem);padding:12px 10px;gap:6px}
   .value-convenience-grid b{font-size:inherit}
   .ludwig-callout{padding:21px 18px}
+}
+
+@media(max-width:820px){
+  .main-nav .nav-dropdown{width:100%;display:grid;grid-template-columns:1fr 42px;align-items:center}
+  .main-nav .nav-dropdown>a{padding:10px 0}
+  .nav-dropdown-toggle{width:42px;height:42px;margin:0;justify-self:end}
+  .nav-dropdown-menu{position:static;grid-column:1/-1;display:none;min-width:0;width:100%;margin:0 0 4px 8px;padding:2px 0 4px 12px;opacity:1;visibility:visible;pointer-events:auto;transform:none;border:0;border-left:1px solid rgba(8,120,255,.55);border-radius:0;background:transparent;box-shadow:none}
+  .nav-dropdown:hover .nav-dropdown-menu,.nav-dropdown:focus-within .nav-dropdown-menu{transform:none}
+  .nav-dropdown.open .nav-dropdown-menu{display:block;transform:none}
+  .main-nav .nav-dropdown-menu a{padding:8px 10px;color:#aeb9c8;font-size:.8rem;white-space:normal}
+}
+
+@media(max-width:620px){
+  .final-four span{font-size:clamp(.62rem,3vw,.78rem);white-space:nowrap}
 }

@@ -1,4 +1,4 @@
-# PokeVend 330 Website — Stage 11
+# PokeVend 330 Website — Stage 15
 
 This release focuses on:
 
@@ -115,9 +115,15 @@ No live inventory claims are made; product availability remains location-depende
 - Contact page phone button now reads `Call/Text Now`.
 - The underlying phone link remains `tel:+13305528172`.
 
-## Stage 14 notes
+## Stage 15 notes
+- Added a Products navigation dropdown on the main customer-site navigation with a direct link to the Card Value & Selling Guide.
+- Products remains the parent navigation section while viewing the Card Value & Selling Guide.
+- Desktop navigation supports hover/focus; mobile navigation uses the Products dropdown toggle.
 - Updated Ludwig grading callout to briefly explain who Ludwig is and explicitly identify the external link as a YouTube video on his channel.
 - Matched the heights of the “Reasons to Keep It” and “Reasons to Sell It” cards.
 - Redesigned the selling-method quick-rule section into four cleaner choice tiles.
 - Each quick-rule choice remains a single line of text within its tile.
-- Deployment script preserves the current local homepage hero images so a Stage 14 deploy will not overwrite manual hero-image swaps.
+- The final four reminder cards use one concise line each on desktop.
+- `CNAME` is included at the ZIP root and set to `pokevend330.com`.
+- Deployment script preserves the current local homepage hero images so a Stage 15 deploy will not overwrite manual hero-image swaps.
+- Deployment safety checks avoid punctuation/encoding-sensitive text checks before commit.

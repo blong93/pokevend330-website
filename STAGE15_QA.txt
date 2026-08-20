@@ -1,0 +1,21 @@
+PokeVend 330 - Stage 15 QA
+============================
+
+Pre-package checks completed:
+- CNAME exists at ZIP root and equals: pokevend330.com
+- Root index.html exists.
+- Card guide exists at card-guide/index.html.
+- Products dropdown is present on the 8 customer-site pages:
+  home, products, locations, about, FAQ, contact, card guide, and 404.
+- Partner page intentionally retains its separate partnership navigation.
+- Card Value & Selling Guide keeps Products highlighted as its parent section.
+- Ludwig section identifies him as a YouTube creator/streamer and explicitly says the button links to a video on his YouTube channel.
+- Keep It / Sell It cards use equal-height layout rules.
+- Quick Rule of Thumb uses four visual choice tiles and one-line tile text.
+- Final four reminder cards are forced to one concise line of text.
+- All local HTML href/src references resolve.
+- All local CSS url() references resolve.
+- Deployment script preserves current local hero-machine.png and hero-cards.png before stashing or replacing files.
+- Deployment script validates CNAME and required Stage 15 files/content before deleting the current working tree.
+- Deployment script uses ASCII-only spot-check strings to avoid the Stage 14 smart-apostrophe encoding failure.
+- Deployment script creates a temporary backup of the current site and automatically restores it if deployment fails before commit.
