@@ -114,3 +114,10 @@ No live inventory claims are made; product availability remains location-depende
 - Contact page phone card now displays only `(330) 552-8172`.
 - Contact page phone button now reads `Call/Text Now`.
 - The underlying phone link remains `tel:+13305528172`.
+
+## Stage 14 notes
+- Updated Ludwig grading callout to briefly explain who Ludwig is and explicitly identify the external link as a YouTube video on his channel.
+- Matched the heights of the “Reasons to Keep It” and “Reasons to Sell It” cards.
+- Redesigned the selling-method quick-rule section into four cleaner choice tiles.
+- Each quick-rule choice remains a single line of text within its tile.
+- Deployment script preserves the current local homepage hero images so a Stage 14 deploy will not overwrite manual hero-image swaps.

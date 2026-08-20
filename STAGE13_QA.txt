@@ -1,9 +1,0 @@
-POKEVEND 330 — STAGE 13 QA
-
-- Root index.html present
-- Root CNAME present and set to pokevend330.com
-- Products page includes approved "Pulled Something Good?" overview
-- Complete card value & selling guide present at /card-guide/
-- TAG grading section included
-- Selling-method value ranges included
-- Custom-domain file protected against accidental removal by deployment script
