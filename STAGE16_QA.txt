@@ -1,0 +1,21 @@
+PokeVend 330 - Stage 16 QA
+============================
+
+Pre-package checks completed:
+- Stage 15 design/content retained while SEO metadata was upgraded.
+- CNAME exists at ZIP root and equals: pokevend330.com
+- Approved PokeVend 330 favicon package exists: favicon.ico plus 48/96/180/192/512 PNG sizes.
+- site.webmanifest exists and references 192px and 512px icons.
+- All 9 HTML files contain favicon references and canonical metadata.
+- All public/indexable pages contain unique titles and meta descriptions.
+- Homepage contains Organization + WebSite JSON-LD with the approved logo URL.
+- Organization schema intentionally contains no street/residential address.
+- robots.txt exists and points to sitemap.xml.
+- sitemap.xml includes 8 public pages and excludes 404.html.
+- 404.html includes noindex,follow.
+- CNAME remains exactly pokevend330.com.
+- All local HTML href/src references resolve.
+- All local CSS url() references resolve.
+- Deployment script preserves current local hero-machine.png and hero-cards.png BEFORE stashing or replacing files.
+- Deployment script validates Stage 16 SEO/favicons/CNAME before deleting the current working tree.
+- Deployment rollback and Git stash safeguards remain in place.

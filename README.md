@@ -1,4 +1,4 @@
-# PokeVend 330 Website — Stage 15
+# PokeVend 330 Website — Stage 16
 
 This release focuses on:
 
@@ -127,3 +127,18 @@ No live inventory claims are made; product availability remains location-depende
 - `CNAME` is included at the ZIP root and set to `pokevend330.com`.
 - Deployment script preserves the current local homepage hero images so a Stage 15 deploy will not overwrite manual hero-image swaps.
 - Deployment safety checks avoid punctuation/encoding-sensitive text checks before commit.
+
+
+## Stage 16 — Google favicon, SEO & privacy-safe metadata
+- Added the approved square PokeVend 330 favicon artwork in 48, 96, 180, 192 and 512 px PNG sizes plus `favicon.ico`.
+- Added `site.webmanifest`.
+- Added favicon and Apple touch icon references to every HTML page.
+- Added unique SEO-focused page titles and meta descriptions.
+- Added canonical URLs for all indexable pages.
+- Added Open Graph and Twitter card metadata using the approved PokeVend 330 icon.
+- Added Organization + WebSite JSON-LD on the homepage to help search engines associate the PokeVend 330 brand and logo with `pokevend330.com`.
+- Organization schema intentionally omits any residential/street address and uses only Akron / Northeast Ohio service-area language.
+- Added `robots.txt` and `sitemap.xml` for Google Search Console submission.
+- Added `noindex,follow` to the 404 page.
+- Preserved the root `CNAME` value exactly as `pokevend330.com`.
+- Stage 16 deployment script preserves the current local `images/hero/hero-machine.png` and `images/hero/hero-cards.png` before any Git stash or file replacement.
