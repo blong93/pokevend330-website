@@ -1,0 +1,15 @@
+PokeVend 330 — Stage 17.2 QA
+
+Changes
+- Business Website is now a text field with URL-oriented keyboard/autocomplete instead of browser-strict type=url validation.
+- Common entries such as example.com and www.example.com are normalized to https://... immediately before AJAX submission.
+- Existing full http:// and https:// URLs are preserved.
+- Blank website remains valid because the field is optional.
+- Stage 17.1 in-page AJAX submission, success/error states, and non-JavaScript fallback remain intact.
+
+Validation
+- Zero mailto: links in packaged HTML.
+- CNAME must remain exactly pokevend330.com.
+- Support, general/launch, and partner forms remain present.
+- Partner website field is not type=url.
+- URL normalization helper is present in js/app.js.

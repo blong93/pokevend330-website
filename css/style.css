@@ -691,3 +691,13 @@ a.button:focus-visible,.main-nav a:focus-visible,.text-link:focus-visible{
 .form-honeypot{position:absolute!important;left:-9999px!important;width:1px!important;height:1px!important;opacity:0!important;pointer-events:none!important}
 .form-privacy{margin:0;color:#718195;font-size:.7rem;line-height:1.55}.check-field{display:flex!important;grid-template-columns:auto 1fr!important;align-items:flex-start;gap:10px!important;color:#cbd6e1!important;font:500 .8rem/1.45 Inter,sans-serif!important}.check-field input{width:17px!important;height:17px;margin-top:2px;padding:0}
 .contact-side-stack{display:grid;gap:20px}.contact-side-stack .contact-card{height:auto}.partner-contact-section{align-items:start;gap:34px}.partner-form-panel{width:100%;max-width:760px}.partner-phone-line{margin-top:18px}.thank-you-hero{min-height:62vh;display:grid;align-items:center}
+
+/* ===== Stage 17.1: in-page form success/error states ===== */
+.pv-form button[type="submit"]:disabled{opacity:.72;cursor:wait;transform:none}
+.form-status{min-height:20px;margin:0;padding:0;color:#9fb1c6;font-size:.78rem;line-height:1.45}
+.form-status.sending{color:#b9c9da}
+.form-status.error{padding:11px 13px;border:1px solid rgba(255,92,92,.42);border-radius:8px;background:rgba(95,12,17,.22);color:#ffd1d1}
+.form-success{display:grid;justify-items:start;align-content:center;min-height:360px;gap:10px}
+.form-success-icon{display:grid;place-items:center;width:52px;height:52px;margin-bottom:6px;border:1px solid rgba(8,120,255,.6);border-radius:50%;background:rgba(8,120,255,.14);color:#fff;font:900 1.45rem Montserrat,sans-serif;box-shadow:0 0 0 7px rgba(8,120,255,.05)}
+.form-success h2{margin:0;font-family:Montserrat,sans-serif}
+.form-success>p:not(.eyebrow){max-width:600px;margin:2px 0 12px;color:#b7c5d4;line-height:1.7}

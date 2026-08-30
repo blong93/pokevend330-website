@@ -1,0 +1,24 @@
+POKEVEND 330 — STAGE 17.1 QA
+
+Purpose
+- Prevent FormSubmit from navigating customers to a blank/external page after form submission.
+- Submit Stage 17 forms in the background and show an on-page success state.
+- Retain the existing _next thank-you URL as the non-JavaScript fallback.
+
+Verified implementation
+- js/app.js intercepts every .pv-form using formsubmit.co.
+- AJAX endpoint is derived as https://formsubmit.co/ajax/<destination>.
+- Submit buttons disable and show “Sending…” while the request is active.
+- Support, launch/general, and partnership forms each receive tailored success copy.
+- Failed submissions show an in-page retry/call-text message.
+- Existing /thanks/ page and _next hidden inputs remain in place as fallback.
+- CNAME remains exactly pokevend330.com.
+- Live hero images are still preserved by the deployment script before any Git stash.
+
+Post-deploy checks
+1. Hard refresh /contact/ and /partners/.
+2. Submit one test through each form.
+3. Confirm the page does not navigate away.
+4. Confirm the form panel changes to its success state.
+5. Confirm the corresponding destination mailbox receives each message.
+6. If FormSubmit activation is still pending for an address, complete its one-time confirmation email and retest.
