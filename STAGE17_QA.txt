@@ -1,0 +1,23 @@
+POKEVEND 330 — STAGE 17 QA
+
+Stage 17 scope
+- Preserves Stage 16 favicon, SEO, sitemap/robots, Products dropdown, card guide, and existing homepage/partner hero artwork.
+- Partner hero CTA buttons scroll to the dedicated partnership inquiry form.
+- Replaces every mailto: link with a dedicated on-site form destination.
+- Adds Customer Support / Refund form on /contact/.
+- Adds Launch Updates / General Contact form on /contact/.
+- Adds Partnership / Free Site Evaluation form on /partners/.
+- Adds /thanks/ confirmation page for form redirects.
+- Forms submit through FormSubmit to support@pokevend330.com, info@pokevend330.com, and partner@pokevend330.com.
+
+Required one-time activation after deployment
+1. Submit the support form once and activate support@pokevend330.com from the FormSubmit confirmation email.
+2. Submit the launch/general form once and activate info@pokevend330.com.
+3. Submit the partnership form once and activate partner@pokevend330.com.
+FormSubmit retains pending submissions while activation is incomplete, but activation should be completed immediately after deployment.
+
+Safety
+- Root CNAME must remain exactly: pokevend330.com
+- Deployment script preserves current local images/hero/hero-machine.png and images/hero/hero-cards.png before any repository replacement.
+- Script backs up the full current site and restores it if pre-commit deployment validation fails.
+- Deployment verifies zero mailto: strings remain in HTML.

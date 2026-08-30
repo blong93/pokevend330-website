@@ -5,7 +5,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:ital,wght@0,700;0,800;0,900;1,800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
 <link rel="stylesheet" href="../css/responsive.css">
-<script defer src="../js/app.js"></script><!-- Stage 16 SEO --><link rel="canonical" href="https://pokevend330.com/contact/"><link rel="icon" href="../favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="48x48" href="../images/favicon-48.png"><link rel="icon" type="image/png" sizes="96x96" href="../images/favicon-96.png"><link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png"><link rel="manifest" href="../site.webmanifest"><meta property="og:type" content="website"><meta property="og:site_name" content="PokeVend 330"><meta property="og:title" content="Contact PokeVend 330 | Akron, Ohio"><meta property="og:description" content="Contact PokeVend 330 for customer support, product requests, vending machine location questions or business partnership inquiries in Northeast Ohio."><meta property="og:url" content="https://pokevend330.com/contact/"><meta property="og:image" content="https://pokevend330.com/images/favicon-512.png"><meta property="og:image:width" content="512"><meta property="og:image:height" content="512"><meta property="og:image:alt" content="PokeVend 330 logo"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Contact PokeVend 330 | Akron, Ohio"><meta name="twitter:description" content="Contact PokeVend 330 for customer support, product requests, vending machine location questions or business partnership inquiries in Northeast Ohio."><meta name="twitter:image" content="https://pokevend330.com/images/favicon-512.png"><!-- /Stage 16 SEO --></head><body>
+<script defer src="../js/app.js"></script><!-- Stage 17 SEO --><link rel="canonical" href="https://pokevend330.com/contact/"><link rel="icon" href="../favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="48x48" href="../images/favicon-48.png"><link rel="icon" type="image/png" sizes="96x96" href="../images/favicon-96.png"><link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png"><link rel="manifest" href="../site.webmanifest"><meta property="og:type" content="website"><meta property="og:site_name" content="PokeVend 330"><meta property="og:title" content="Contact PokeVend 330 | Akron, Ohio"><meta property="og:description" content="Contact PokeVend 330 for customer support, product requests, vending machine location questions or business partnership inquiries in Northeast Ohio."><meta property="og:url" content="https://pokevend330.com/contact/"><meta property="og:image" content="https://pokevend330.com/images/favicon-512.png"><meta property="og:image:width" content="512"><meta property="og:image:height" content="512"><meta property="og:image:alt" content="PokeVend 330 logo"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Contact PokeVend 330 | Akron, Ohio"><meta name="twitter:description" content="Contact PokeVend 330 for customer support, product requests, vending machine location questions or business partnership inquiries in Northeast Ohio."><meta name="twitter:image" content="https://pokevend330.com/images/favicon-512.png"><!-- /Stage 17 SEO --></head><body>
 <header class="site-header" id="top">
   <a class="brand" href="../" aria-label="PokeVend 330 home"><img src="../images/logo.png" alt="PokeVend 330"></a>
   <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
@@ -26,12 +26,57 @@
     <p>Questions, product requests, vending issues, or just want to know where the next machine is going? Reach out.</p>
   </div>
 </section>
-<section class="section-shell contact-page-grid reveal">
-<article class="contact-card"><p class="eyebrow">CUSTOMER SUPPORT</p><h2>Email Us</h2><p>For purchase issues, include the machine location, approximate time, and what happened so we can help faster.</p><a class="button button-primary" href="mailto:support@pokevend330.com?subject=PokeVend%20330%20Customer%20Support">support@pokevend330.com</a></article>
-<article class="contact-card"><p class="eyebrow">CALL OR TEXT</p><h2>(330) 552-8172</h2><p>For time-sensitive customer service or questions about PokeVend 330.</p><a class="button button-outline" href="tel:+13305528172">Call/Text Now</a></article>
-<article class="contact-card"><p class="eyebrow">HOST A MACHINE</p><h2>Business Partnerships</h2><p>If you own or manage a business and want to discuss hosting a machine, use our dedicated partner page.</p><a class="button button-outline" href="../partners/">Visit Partner Page</a></article>
+<section class="section-shell contact-form-layout reveal">
+  <div class="form-panel" id="support-form">
+    <div class="form-heading"><p class="eyebrow">CUSTOMER SUPPORT &amp; REFUNDS</p><h2>Tell Us What Happened</h2><p>Use this form for purchase issues, refund requests, machine problems, or product concerns. The more detail you provide, the faster we can help.</p></div>
+    <form class="pv-form" action="https://formsubmit.co/support@pokevend330.com" method="POST">
+      <input type="hidden" name="_subject" value="PokeVend 330 — Customer Support / Refund Request">
+      <input type="hidden" name="_next" value="https://pokevend330.com/thanks/?type=support">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_url" value="https://pokevend330.com/contact/#support-form">
+      <input class="form-honeypot" type="text" name="_honey" tabindex="-1" autocomplete="off">
+      <div class="form-grid two-col">
+        <label>Full Name <input type="text" name="Name" autocomplete="name" required></label>
+        <label>Email <input type="email" name="Email" autocomplete="email" required></label>
+        <label>Phone <span class="optional">Optional</span><input type="tel" name="Phone" autocomplete="tel"></label>
+        <label>Request Type <select name="Request Type" required><option value="" selected disabled>Select one</option><option>Refund / charge issue</option><option>Product did not vend</option><option>Machine problem</option><option>Product concern</option><option>Other customer support</option></select></label>
+        <label>Machine Location <input type="text" name="Machine Location" placeholder="Business or location name" required></label>
+        <label>Date / Approx. Time <input type="text" name="Date and Approximate Time" placeholder="Example: Aug. 30 around 2:15 PM" required></label>
+        <label>Product Selected <span class="optional">Optional</span><input type="text" name="Product Selected"></label>
+        <label>Amount Charged <span class="optional">Optional</span><input type="text" name="Amount Charged" inputmode="decimal" placeholder="$"></label>
+      </div>
+      <label>What happened? <textarea name="Details" rows="5" required placeholder="Please describe the issue, including anything shown on the machine screen."></textarea></label>
+      <p class="form-privacy">Do not include payment-card numbers or other sensitive financial information. Form submissions are delivered to PokeVend 330 through FormSubmit.</p>
+      <button class="button button-primary" type="submit">Send Support Request</button>
+    </form>
+  </div>
+  <div class="form-panel" id="launch-updates">
+    <div class="form-heading"><p class="eyebrow">LAUNCH UPDATES &amp; GENERAL CONTACT</p><h2>Stay in the Loop</h2><p>Ask about the first machine launch, new locations, restocks, product requests, or anything else related to PokeVend 330.</p></div>
+    <form class="pv-form" action="https://formsubmit.co/info@pokevend330.com" method="POST">
+      <input type="hidden" name="_subject" value="PokeVend 330 — Launch Updates / General Contact">
+      <input type="hidden" name="_next" value="https://pokevend330.com/thanks/?type=general">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_url" value="https://pokevend330.com/contact/#launch-updates">
+      <input class="form-honeypot" type="text" name="_honey" tabindex="-1" autocomplete="off">
+      <div class="form-grid two-col">
+        <label>Full Name <input type="text" name="Name" autocomplete="name" required></label>
+        <label>Email <input type="email" name="Email" autocomplete="email" required></label>
+        <label>Phone <span class="optional">Optional</span><input type="tel" name="Phone" autocomplete="tel"></label>
+        <label>City / Area <span class="optional">Optional</span><input type="text" name="City or Area" autocomplete="address-level2"></label>
+        <label class="full-span">What can we help with? <select name="Topic" required><option value="" selected disabled>Select one</option><option>Launch updates</option><option>New machine locations</option><option>Restocks / new drops</option><option>Product request</option><option>General question</option></select></label>
+      </div>
+      <label>Message <textarea name="Message" rows="5" required placeholder="Tell us what you would like to know."></textarea></label>
+      <label class="check-field"><input type="checkbox" name="Launch Update Interest" value="Yes"> <span>Please note that I would like to hear when PokeVend 330 launches or adds new locations.</span></label>
+      <p class="form-privacy">Form submissions are delivered to PokeVend 330 through FormSubmit. This checkbox records your interest; it is not an automated mailing-list subscription.</p>
+      <button class="button button-primary" type="submit">Send Message</button>
+    </form>
+  </div>
+  <aside class="contact-side-stack">
+    <article class="contact-card"><p class="eyebrow">CALL OR TEXT</p><h2>(330) 552-8172</h2><p>For time-sensitive customer service or questions about PokeVend 330.</p><a class="button button-outline" href="tel:+13305528172">Call/Text Now</a></article>
+    <article class="contact-card"><p class="eyebrow">HOST A MACHINE</p><h2>Business Partnerships</h2><p>If you own or manage a business and want to discuss hosting a machine, use our dedicated partnership form.</p><a class="button button-outline" href="../partners/#partner-contact">Partnership Inquiry</a></article>
+  </aside>
 </section>
-<section class="section-shell support-tips reveal"><h2>Reporting a Vending Issue?</h2><p>Please send as much of the following as you can:</p><div class="tag-row"><span>Machine location</span><span>Date & time</span><span>Product selected</span><span>Amount charged</span><span>Brief description</span></div></section>
+<section class="section-shell support-tips reveal"><h2>Need Help With a Purchase?</h2><p>PokeVend 330 handles vending issues and refund requests directly so host-location employees do not have to troubleshoot transactions.</p></section>
 </main><footer class="site-footer">
   <div class="footer-brand">
     <img src="../images/logo.png" alt="PokeVend 330">

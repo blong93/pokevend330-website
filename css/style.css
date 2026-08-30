@@ -664,3 +664,30 @@ a.button:focus-visible,.main-nav a:focus-visible,.text-link:focus-visible{
 .main-nav .nav-dropdown-menu a{display:block;padding:12px 14px;border-radius:7px;color:#dce8f7;font-size:.78rem;line-height:1.3;text-transform:none;white-space:nowrap}
 .main-nav .nav-dropdown-menu a:hover,.main-nav .nav-dropdown-menu a:focus-visible{background:rgba(8,120,255,.16);color:#fff}
 .main-nav .nav-dropdown-menu a:after{display:none!important}
+
+/* ===== Stage 17: partner CTA fixes + shared homepage hero artwork ===== */
+#partner-contact{scroll-margin-top:110px}
+.partner-hero{grid-template-columns:minmax(0,1.42fr) minmax(500px,.9fr)}
+.partner-hero-visuals{position:relative;min-height:590px;align-self:stretch;isolation:isolate}
+.partner-card-stage{position:absolute;left:-4%;top:4%;width:72%;z-index:2;display:grid;place-items:center;isolation:isolate}
+.partner-card-art{position:relative;z-index:2;width:100%;height:auto;filter:drop-shadow(0 24px 38px rgba(0,0,0,.62))}
+.partner-machine-stage{position:absolute;right:-1%;bottom:-18px;width:66%;height:560px;z-index:3;display:grid;place-items:end center;isolation:isolate}
+.partner-machine-art{position:relative;z-index:2;width:auto;max-width:100%;height:545px;object-fit:contain;filter:drop-shadow(0 30px 44px rgba(0,0,0,.76));-webkit-mask-image:radial-gradient(ellipse 78% 83% at 50% 49%,#000 68%,rgba(0,0,0,.98) 78%,transparent 100%);mask-image:radial-gradient(ellipse 78% 83% at 50% 49%,#000 68%,rgba(0,0,0,.98) 78%,transparent 100%)}
+.partner-card-stage .hero-card-glow{width:90%;height:60%}
+.partner-machine-stage .hero-machine-v10-glow{width:78%;height:72%}
+
+
+/* ===== Stage 17: dedicated contact, support/refund, and partnership forms ===== */
+#support-form,#launch-updates,#partner-contact{scroll-margin-top:110px}
+.contact-form-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(260px,.55fr);gap:20px;align-items:start}
+.form-panel{padding:28px;border:1px solid rgba(8,120,255,.34);border-radius:14px;background:linear-gradient(145deg,rgba(8,23,40,.96),rgba(4,11,20,.98));box-shadow:inset 0 1px 0 rgba(255,255,255,.035),0 18px 45px rgba(0,0,0,.2)}
+.form-heading{margin-bottom:20px}.form-heading h2{margin:4px 0 8px}.form-heading p:last-child{color:#aeb9c8;line-height:1.65}
+.pv-form{display:grid;gap:15px}.form-grid{display:grid;gap:14px}.form-grid.two-col{grid-template-columns:repeat(2,minmax(0,1fr))}.form-grid .full-span{grid-column:1/-1}
+.pv-form label{display:grid;gap:7px;color:#f2f6fb;font:700 .76rem Montserrat,sans-serif;letter-spacing:.02em}.pv-form .optional{color:#7f90a4;font:500 .67rem Inter,sans-serif;margin-left:4px}
+.pv-form input,.pv-form select,.pv-form textarea{width:100%;min-width:0;border:1px solid #17395f;border-radius:8px;background:#040d17;color:#f4f7fb;padding:12px 13px;font:500 .9rem Inter,sans-serif;outline:none;transition:border-color .18s ease,box-shadow .18s ease}
+.pv-form textarea{resize:vertical;min-height:118px;line-height:1.5}.pv-form input::placeholder,.pv-form textarea::placeholder{color:#64758a}
+.pv-form input:focus,.pv-form select:focus,.pv-form textarea:focus{border-color:#0878ff;box-shadow:0 0 0 3px rgba(8,120,255,.14)}
+.pv-form select{appearance:auto}.pv-form .button{justify-self:start;border:0;cursor:pointer}
+.form-honeypot{position:absolute!important;left:-9999px!important;width:1px!important;height:1px!important;opacity:0!important;pointer-events:none!important}
+.form-privacy{margin:0;color:#718195;font-size:.7rem;line-height:1.55}.check-field{display:flex!important;grid-template-columns:auto 1fr!important;align-items:flex-start;gap:10px!important;color:#cbd6e1!important;font:500 .8rem/1.45 Inter,sans-serif!important}.check-field input{width:17px!important;height:17px;margin-top:2px;padding:0}
+.contact-side-stack{display:grid;gap:20px}.contact-side-stack .contact-card{height:auto}.partner-contact-section{align-items:start;gap:34px}.partner-form-panel{width:100%;max-width:760px}.partner-phone-line{margin-top:18px}.thank-you-hero{min-height:62vh;display:grid;align-items:center}

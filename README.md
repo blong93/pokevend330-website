@@ -1,4 +1,4 @@
-# PokeVend 330 Website — Stage 16
+# PokeVend 330 Website — Stage 17
 
 This release focuses on:
 
@@ -129,7 +129,7 @@ No live inventory claims are made; product availability remains location-depende
 - Deployment safety checks avoid punctuation/encoding-sensitive text checks before commit.
 
 
-## Stage 16 — Google favicon, SEO & privacy-safe metadata
+## Stage 17 — Google favicon, SEO & privacy-safe metadata
 - Added the approved square PokeVend 330 favicon artwork in 48, 96, 180, 192 and 512 px PNG sizes plus `favicon.ico`.
 - Added `site.webmanifest`.
 - Added favicon and Apple touch icon references to every HTML page.
@@ -141,4 +141,8 @@ No live inventory claims are made; product availability remains location-depende
 - Added `robots.txt` and `sitemap.xml` for Google Search Console submission.
 - Added `noindex,follow` to the 404 page.
 - Preserved the root `CNAME` value exactly as `pokevend330.com`.
-- Stage 16 deployment script preserves the current local `images/hero/hero-machine.png` and `images/hero/hero-cards.png` before any Git stash or file replacement.
+- Stage 17 deployment script preserves the current local `images/hero/hero-machine.png` and `images/hero/hero-cards.png` before any Git stash or file replacement.
+
+
+## Stage 17
+Partner CTA buttons now scroll reliably to the partner contact section, and the partner hero uses the same hero card and machine artwork as the homepage. Stage 16 SEO/favicon/privacy work is retained.

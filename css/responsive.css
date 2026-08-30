@@ -195,3 +195,31 @@
 @media(max-width:620px){
   .final-four span{font-size:clamp(.62rem,3vw,.78rem);white-space:nowrap}
 }
+
+/* Stage 17 partner hero artwork responsive layout */
+@media(max-width:1100px){
+  .partner-hero{grid-template-columns:minmax(0,1.25fr) minmax(390px,.8fr)}
+  .partner-hero-visuals{min-height:535px}
+  .partner-card-stage{left:-2%;width:76%}
+  .partner-machine-stage{width:68%;height:505px}
+  .partner-machine-art{height:490px}
+}
+@media(max-width:900px){
+  .partner-hero{grid-template-columns:1fr}
+  .partner-hero-visuals{min-height:650px;margin-top:10px}
+  .partner-card-stage{left:50%;top:0;width:min(620px,86vw);transform:translateX(-50%)}
+  .partner-machine-stage{right:50%;bottom:-15px;width:min(390px,64vw);height:500px;transform:translateX(50%)}
+  .partner-machine-art{height:490px}
+}
+@media(max-width:620px){
+  .partner-hero-visuals{min-height:520px}
+  .partner-card-stage{width:96vw;max-width:none}
+  .partner-machine-stage{width:min(330px,76vw);height:405px}
+  .partner-machine-art{height:395px}
+}
+
+
+/* Stage 17 form responsive layout */
+@media(max-width:1100px){.contact-form-layout{grid-template-columns:1fr 1fr}.contact-side-stack{grid-column:1/-1;grid-template-columns:1fr 1fr}}
+@media(max-width:820px){.contact-form-layout{grid-template-columns:1fr}.contact-side-stack{grid-column:auto;grid-template-columns:1fr}.partner-contact-section{grid-template-columns:1fr}.partner-form-panel{max-width:none}}
+@media(max-width:620px){.form-panel{padding:21px 17px}.form-grid.two-col{grid-template-columns:1fr}.form-grid .full-span{grid-column:auto}.pv-form .button{width:100%;justify-content:center}.partner-contact-section{gap:22px}}
