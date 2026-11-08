@@ -1,0 +1,8 @@
+Stage 18 — prepared from user-supplied Stage 17.2 baseline, 2026-11-08
+1. Locations page: Missing Falls Brewery, 540 S Main St Suite 112, Akron OH 44311; brewery-published venue hours, phone and directions.
+2. Products page: EXACTLY 29 booster products with numeric landed cost in live Pricing tab as of 2026-11-08. Uncosted products are excluded. No live stock claims.
+3. Images: 29 matching cropped, transparent WebP pack images from latest image catalog (30 entries incl. Obsidian Flames, excluded). Home page featured packs updated too.
+4. Stage 17.2 footer, navigation, card value guide, forms, sitemap, SEO files and hero assets retained.
+5. Preflight integrity checked. Machine not physically inspected; brewery hours may change. No live website deployment performed.
+6. Packaging caveats: 2026 Topps Series 2 wrapper may show 36 cards versus prior loose-pack price comparison; Bowman Football wrapper has 8 cards versus earlier 10-card description; Magic Marvel image is a Wolverine art variant.
+7. User local repo hero-machine.png and hero-cards.png always take priority during deployment. Root CNAME MUST remain exactly pokevend330.com.

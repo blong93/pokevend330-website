@@ -701,3 +701,8 @@ a.button:focus-visible,.main-nav a:focus-visible,.text-link:focus-visible{
 .form-success-icon{display:grid;place-items:center;width:52px;height:52px;margin-bottom:6px;border:1px solid rgba(8,120,255,.6);border-radius:50%;background:rgba(8,120,255,.14);color:#fff;font:900 1.45rem Montserrat,sans-serif;box-shadow:0 0 0 7px rgba(8,120,255,.05)}
 .form-success h2{margin:0;font-family:Montserrat,sans-serif}
 .form-success>p:not(.eyebrow){max-width:600px;margin:2px 0 12px;color:#b7c5d4;line-height:1.7}
+
+/* Stage 18: Location 01 actions; retain Stage 17.2 base styles */
+.location-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 18px; margin-bottom: 16px; }
+.location-smallprint { font-size: .9rem; opacity: .82; }
+.location-address { line-height: 1.55; }
