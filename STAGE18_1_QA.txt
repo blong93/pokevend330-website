@@ -1,0 +1,34 @@
+POKEVEND 330 | STAGE 18.1 RELEASE QA
+
+Baseline: live Stage 18; no change to Cloudflare settings or GitHub Pages custom domain.
+
+LOCATIONS
+- Missing Falls Brewery remains Location #1.
+- Removed Location 01 / Downtown Akron kicker from its listing.
+- Removed brewery opening-hours text and the phone number from its listing.
+- Preserved name, description, address, Get Directions, Venue Website, pack-selection note.
+
+PRODUCTS
+- Exactly 29 qualifying packs, selected using the last verified Pricing tab landed costs.
+- Exactly 29 referenced booster-pack WebP images with existing files.
+- Seven product groups, each sorted newest release date to oldest when known.
+- Missing release dates are not invented; undated sports and Palworld products placed after dated products within their category.
+- Removed Retail Booster Pack suffix from 2026 Topps Baseball Update Series and 2026 Bowman Football names.
+
+CORRECTED SPORTS IMAGE ARTWORK (visual content)
+- 2026 Topps Baseball Series 2: 12 CARDS
+- 2026 Topps Baseball Update Series: 12 CARDS
+- 2026 Bowman Football: 10 TRADING CARDS
+- All three image filenames and SHA256 hashes are validated at deployment preflight.
+
+SAFE DEPLOYMENT
+- Root CNAME content must be exactly pokevend330.com.
+- Existing hero-machine.png and hero-cards.png saved BEFORE any Git stash.
+- ZIP validated prior to modifying local repository.
+- Local clean-tree backup and pre-commit rollback available.
+- Git push verified against origin hash.
+- Existing stashes not auto-applied or deleted.
+
+NOTE: This package includes the complete static website and must be deployed to
+C:\Users\blong\OneDrive\Documents\GitHub\pokevend330-website
+using the accompanying Stage 18.1 PowerShell script. The ZIP must remain unextracted.
