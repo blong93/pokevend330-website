@@ -1,3 +1,8 @@
+# Stage 18.2
+
+Update: 13 missing product card-price links added, preserving Stage 18.1.
+For deployment, use PokeVend330_Stage18_2_Deploy_Blong.ps1 alongside this ZIP.
+
 # PokeVend 330 Website — Stage 17
 
 This release focuses on:

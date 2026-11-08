@@ -1,0 +1,8 @@
+PokeVend 330 - Stage 18.2 QA
+Baseline: Stage 18.1 (confirmed working)
+Changes: Added 13 missing card-price links to products/index.html.
+All 29 products now have HTTPS price-guide links, opening in new tabs.
+29 eligible products, release order, custom hero images and CNAME preserved.
+All other site files copied unchanged from Stage 18.1.
+No new pack artwork; earlier generated Charizard card is not included.
+External page availability was not live-tested in this build.
